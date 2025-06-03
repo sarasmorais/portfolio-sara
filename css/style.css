@@ -90,7 +90,7 @@
 .hero-content h1 {
     font-family: var(--font-heading);
     font-size: 4.2rem; 
-    color: var(--primary-color); /* Usando a nova cor primária */
+    color: var(--primary-color); 
     margin-bottom: 0.5rem;
     line-height: 1.1;
 }
@@ -107,7 +107,7 @@
     font-size: 1.1rem;
 }
 
-/* Container Padrão para Seções */
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -116,7 +116,7 @@
 
 h2 { /* Títulos de seção */
     font-family: var(--font-heading);
-    color: var(--primary-color); /* Títulos de seção com a cor primária */
+    color: var(--primary-color); 
     margin-bottom: 2.5rem;
     text-align: center;
     font-size: 2.2rem;
@@ -136,7 +136,7 @@ p {
 
 .highlight { /* Para texto em negrito dentro de parágrafos, por exemplo */
     font-weight: 700;
-    color: var(--accent-color); /* Dando um toque da cor de destaque */
+    color: var(--accent-color); 
 }
 
 .highlight-text { /* Para o fundo destacado */
@@ -145,7 +145,7 @@ p {
     border-radius: 4px;
 }
 
-/* Seção Sobre Mim */
+
 #sobre-mim h2 {
     margin-bottom: 3rem;
 }
@@ -179,7 +179,7 @@ p {
     margin-top: 1.5rem;
 }
 
-/* Seção Projetos */
+
 .projetos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -212,7 +212,7 @@ p {
 
 .projeto-card h3 {
     font-family: var(--font-heading);
-    color: var(--primary-color); /* Títulos dos projetos com a cor primária */
+    color: var(--primary-color); 
     margin-bottom: 0.5rem;
     font-size: 1.4rem;
 }
@@ -229,7 +229,7 @@ p {
     gap: 0.5rem;
 }
 
-/* Botões */
+
 .btn, .btn-outline {
     display: inline-block;
     padding: 0.6rem 1.2rem;
@@ -265,7 +265,7 @@ p {
     color: white;
 }
 
-/* Seção de Habilidades (anteriormente Rosa) */
+
 .skills-section-rosa { /* Mantendo a classe para não quebrar o HTML, mas as cores são da nova paleta */
     font-family: var(--font-body); 
     background-color: var(--skill-section-bg); 
@@ -331,7 +331,7 @@ p {
     color: var(--skill-text-color);
 }
 
-/* Responsividade para a grade de habilidades */
+
 @media (max-width: 768px) {
     .skills-section-rosa h2 {
         font-size: 1.8rem;
@@ -367,7 +367,7 @@ p {
     }
 }
 
-/* Seção Contato */
+
 .contato-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -438,7 +438,7 @@ p {
     border-color: var(--secondary-color); 
 }
 
-/* Rodapé */
+
 footer {
     text-align: center;
     padding: 2rem;
@@ -447,7 +447,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Media Queries para Responsividade */
+
 @media (max-width: 768px) {
     html {
         font-size: 15px;
