@@ -1,0 +1,64 @@
+/* Arquivo: css/reset.css */
+/* CSS Reset Básico e Configurações Globais */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+/* Variáveis de Cores Atualizadas com a Nova Paleta */
+:root {
+    /* Nova Paleta:
+       1. #231942 (Oxford Blue)
+       2. #5E548E (Ultra Violet)
+       3. #9F86C0 (Lavender Purple)
+       4. #BE95C4 (Lilac)
+       5. #E0B1CB (Pink Lavender)
+    */
+
+    --background-color: #FBF9FC; /* Custom: Quase branco com um toque de lavanda */
+    --text-color: #231942;       /* Oxford Blue: Para texto principal, alta legibilidade */
+    
+    --primary-color: #9F86C0;    /* Lavender Purple: Cor primária para elementos interativos */
+    --secondary-color: #BE95C4;  /* Lilac: Cor secundária para hovers e detalhes mais claros */
+    --accent-color: #5E548E;      /* Ultra Violet: Cor de destaque para CTAs fortes ou ícones importantes */
+
+    --card-background-color: #FFFFFF; /* Branco puro para cards */
+    --border-color: #E0B1CB;          /* Pink Lavender: Para bordas sutis */
+    --header-background: rgba(251, 249, 252, 0.92); /* Fundo do header semi-transparente, baseado no bg */
+    --shadow-color: rgba(35, 25, 66, 0.08); /* Sombra sutil baseada no Oxford Blue */
+    
+    --highlight-text-bg: rgba(159, 134, 192, 0.15); /* Fundo destacado baseado na cor primária */
+
+    --hero-text-color: var(--text-color); /* Texto do hero usa a cor de texto principal */
+    --hero-overlay-color: rgba(94, 84, 142, 0.03); /* Overlay muito sutil no hero, baseado no Ultra Violet */
+
+    /* Variáveis para a Seção de Habilidades (anteriormente --pink-...) */
+    --skill-section-bg: var(--background-color);       /* Fundo da seção de skills igual ao principal */
+    --skill-title-color: var(--accent-color);          /* Título "Habilidades" usa Ultra Violet */
+    --skill-title-underline-color: var(--accent-color);/* Linha abaixo do título também Ultra Violet */
+    --skill-item-bg: #F7F2FA;                         /* Custom: Fundo dos cards de skill, lavanda muito claro */
+    --skill-icon-color: var(--accent-color);           /* Ícones de skills usam Ultra Violet */
+    --skill-text-color: var(--text-color);             /* Texto dos nomes das skills usa Oxford Blue */
+    --skill-item-hover-shadow-color: rgba(94, 84, 142, 0.15); /* Sombra no hover baseada no Ultra Violet */
+    
+    --transition-speed: 0.3s ease;
+
+    /* Fontes (Mantidas) */
+    --font-body: 'Montserrat', sans-serif;
+    --font-heading: 'Lora', serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
