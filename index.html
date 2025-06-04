@@ -17,6 +17,18 @@
 </head>
 
 <body>
+    <!-- Partículas de fundo -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
     <header id="main-header">
         <nav>
             <a href="#inicio" class="logo">SM</a>
@@ -32,9 +44,119 @@
     <main>
         <section id="inicio" class="hero-section">
             <div class="hero-content">
-                <h1><span class="highlight">Sara Morais</span></h1>
-                <p class="subtitle">Desenvolvedora Front-End em Evolução</p>
-                <a href="#projetos" class="btn btn-hero">Meus Projetos</a>
+                <div class="hero-text">
+                    <h1>
+                        <span class="greeting">Olá, eu sou</span>
+                        <span class="highlight typing-animation">Sara Morais</span>
+                    </h1>
+                    <p class="subtitle">
+                        <span class="role-text">Desenvolvedora Front-End</span>
+                        <span class="status-badge">em Evolução</span>
+                    </p>
+                    <p class="hero-description">
+                        Apaixonada por criar experiências digitais incríveis e funcionais. 
+                        Transformo ideias em código com foco em acessibilidade e design responsivo.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn btn-hero primary">
+                            <i class="fas fa-code"></i>
+                            Meus Projetos
+                        </a>
+                        <a href="#contato" class="btn btn-hero secondary">
+                            <i class="fas fa-envelope"></i>
+                            Entre em Contato
+                        </a>
+                    </div>
+                    <!-- <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="6">0</span>
+                                <span class="stat-label">Projetos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="5">0</span>
+                                <span class="stat-label">Tecnologias</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="100">0</span>
+                                <span class="stat-label">% Dedicação</span>
+                            </div>
+                    </div>  -->
+                </div>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control close"></span>
+                                <span class="control minimize"></span>
+                                <span class="control maximize"></span>
+                            </div>
+                            <span class="window-title">sara-portfolio.js</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="line-number">1</span>
+                                <span class="code-text">
+                                    <span class="keyword">const</span> 
+                                    <span class="variable">developer</span> = {
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">2</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;<span class="property">name</span>: 
+                                    <span class="string">'Sara Morais'</span>,
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">3</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;<span class="property">role</span>: 
+                                    <span class="string">'Front-End Developer'</span>,
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">4</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;<span class="property">skills</span>: [
+                                    <span class="string">'HTML'</span>, 
+                                    <span class="string">'CSS'</span>, 
+                                    <span class="string">'JS'</span>],
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">5</span>
+                                <span class="code-text">
+                                    &nbsp;&nbsp;<span class="property">passion</span>: 
+                                    <span class="string">'Creating amazing UIs'</span>
+                                </span>
+                            </div>
+                            <div class="code-line">
+                                <span class="line-number">6</span>
+                                <span class="code-text">};</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-icon html">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="floating-icon css">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="floating-icon js">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="floating-icon react">
+                            <i class="fab fa-react"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <span class="scroll-text">Role para baixo</span>
             </div>
         </section>
 
@@ -63,8 +185,7 @@
             <h2>Meus Projetos</h2>
             <div class="projetos-grid">
                 <div class="projeto-card">
-                    <img src="imgs/smash-drive.png"
-                        alt="Imagem do projeto Smash Drive">
+                    <img src="imgs/smash-drive.png" alt="Imagem do projeto Smash Drive">
                     <h3>Smash Drive</h3>
                     <p>Smash Drive é uma aplicação web simples e intuitiva para envio de arquivos usando a API do Smash.</p>
                     <div class="projeto-links">
@@ -73,8 +194,7 @@
                     </div>
                 </div>
                 <div class="projeto-card">
-                    <img src="imgs/amigo-pet.png"
-                        alt="Imagem do Projeto AmigoPet">
+                    <img src="imgs/amigo-pet.png" alt="Imagem do Projeto AmigoPet">
                     <h3>Site Modelo de Petshop - AmigoPet</h3>
                     <p>Apresenta um site modelo de petshop com foco em acessibilidade, design responsivo e informações institucionais</p>
                     <div class="projeto-links">
@@ -83,8 +203,7 @@
                     </div>
                 </div>
                 <div class="projeto-card">
-                    <img src="imgs/cards-decolar.png"
-                        alt="Imagem do Projeto Cards Decolar">
+                    <img src="imgs/cards-decolar.png" alt="Imagem do Projeto Cards Decolar">
                     <h3>Cards Decolar</h3>
                     <p>Projeto inspirado no layout e estilo da seção de ofertas de viagem da página Decolar.com usando React</p>
                     <div class="projeto-links">
@@ -93,8 +212,7 @@
                     </div>
                 </div>
                 <div class="projeto-card">
-                    <img src="imgs/qrcode-generator.png"
-                        alt="Imagem do Projeto QR code">
+                    <img src="imgs/qrcode-generator.png" alt="Imagem do Projeto QR code">
                     <h3>Gerador de QR code</h3>
                     <p>Interface com o objetivo de permitir que o usuário gere QR Codes de forma rápida e prática, a partir de qualquer texto ou link desejado.</p>
                     <div class="projeto-links">
@@ -103,8 +221,7 @@
                     </div>
                 </div>
                 <div class="projeto-card">
-                    <img src="imgs/quote-anime.png"
-                        alt="Imagem do Projeto Citações Anime">
+                    <img src="imgs/quote-anime.png" alt="Imagem do Projeto Citações Anime">
                     <h3>Citações de Animes</h3>
                     <p>Um gerador de frases de animes, desenvolvido com HTML, CSS e JavaScript. </p>
                     <div class="projeto-links">
@@ -113,8 +230,7 @@
                     </div>
                 </div>
                 <div class="projeto-card">
-                    <img src="imgs/tiroaoalvo.png"
-                        alt="Imagem do Projeto Tiro ao Alvo">
+                    <img src="imgs/tiroaoalvo.png" alt="Imagem do Projeto Tiro ao Alvo">
                     <h3>Jogo de Tiro ao Alvo</h3>
                     <p>Um jogo de navegador "Tiro ao Alvo" feito com HTML, CSS e JavaScript. Clique nos alvos para marcar pontos.</p>
                     <div class="projeto-links">
@@ -158,14 +274,11 @@
             <div class="contato-wrapper">
                 <div class="contato-info">
                     <p>Adoraria ouvir sobre novas oportunidades e colaborações!</p>
-                    <p>Você pode me encontrar nas redes sociais ou me enviar uma mensagem diretamente pelo formulário.
-                    </p>
+                    <p>Você pode me encontrar nas redes sociais ou me enviar uma mensagem diretamente pelo formulário.</p>
                     <div class="social-links">
                         <a href="https://github.com/sarasmorais" target="_blank" aria-label="GitHub de Sara">GitHub</a>
-                        <a href="https://linkedin.com/in/sarasmorais" target="_blank"
-                            aria-label="LinkedIn de Sara">LinkedIn</a>
-                        <a href="https://instagram.com/sarasoouza" target="_blank"
-                            aria-label="Instagram de Sara">Instagram</a>
+                        <a href="https://linkedin.com/in/sarasmorais" target="_blank" aria-label="LinkedIn de Sara">LinkedIn</a>
+                        <a href="https://instagram.com/sarasoouza" target="_blank" aria-label="Instagram de Sara">Instagram</a>
                     </div>
                 </div>
                 <form id="contact-form">
